@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.redhat</groupId>
-  <artifactId>demo01</artifactId>
+  <artifactId>ExchangeApp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>demo01</name>
+  <name>ExchangeApp</name>
   <properties>
     <camel.version>2.15.1.redhat-620133</camel.version>
     <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>

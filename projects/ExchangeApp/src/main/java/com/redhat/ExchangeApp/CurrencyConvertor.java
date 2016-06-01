@@ -1,4 +1,4 @@
-package com.redhat.demo01;
+package com.redhat.ExchangeApp;
 
 import java.util.ArrayList;
 import java.util.Map;
