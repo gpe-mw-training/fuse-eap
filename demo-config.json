@@ -9,7 +9,7 @@
   "targetProduct":"JBoss Fuse",
   "productVersion":"JBoss Fuse 6.2.1",
   "technologies": ["JBoss Fuse"],
-  "links": [ 
+  "links": [
     {
       "name":"Code",
       "url":"https://github.com/jbossdemocentral/jboss-fuse-oneap"

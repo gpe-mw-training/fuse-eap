@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh 
 LAB="Lab 2 of Fuse_EAP course"
 
 #EAP Env
