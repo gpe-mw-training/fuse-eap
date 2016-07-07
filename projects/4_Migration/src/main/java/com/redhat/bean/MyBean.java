@@ -1,4 +1,4 @@
-package com.redhat.gpe.training.camel.bean;
+package com.redhat.bean;
 
 import org.apache.camel.Body;
 

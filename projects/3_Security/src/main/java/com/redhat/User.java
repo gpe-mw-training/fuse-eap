@@ -1,9 +1,4 @@
-package com.redhat.consulting.fusequickstars.eap.rest;
-
-/**
- *  @author lberetta
- *
- */
+package com.redhat;
 
 public class User {
 
