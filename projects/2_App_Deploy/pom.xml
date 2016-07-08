@@ -6,7 +6,9 @@
   <artifactId>ExchangeApp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>ExchangeApp</name>
+  
+  <name>RedHat GPE Training :: Fuse_EAP :: Lab :: 2 :: App Deploy</name>
+
   <properties>
     <camel.version>2.15.1.redhat-620133</camel.version>
     <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -136,7 +138,7 @@
           </configuration>
         </plugin>
       </plugins>
-    </pluginManagement>    
+    </pluginManagement>
   </build>
 
   <repositories>

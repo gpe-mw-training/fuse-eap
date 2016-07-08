@@ -1,6 +1,6 @@
-package com.redhat.consulting.fusequickstars.eap.jpa.route;
+package com.redhat.route;
 
-import com.redhat.consulting.fusequickstars.eap.jpa.model.User;
+import com.redhat.model.User;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.cdi.ContextName;
 import org.apache.camel.component.jpa.JpaEndpoint;
@@ -11,10 +11,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceContext;
 import javax.transaction.UserTransaction;
-
-/**
- *  @author lberetta
- */
 
 @ContextName("jpa")
 public class JpaRoutes extends RouteBuilder {
@@ -41,7 +37,7 @@ public class JpaRoutes extends RouteBuilder {
         jpaEndpoint.setTransactionManager(transactionManager);
 
         from("timer://timeToPersist?fixedRate=true&period=5000")
-                .setBody(constant(new User("leandro")))
+                .setBody(constant(new User("GPTE-Student")))
                 .log("Inserting new user")
                 .to(jpaEndpoint);
 

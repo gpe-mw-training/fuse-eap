@@ -9,7 +9,8 @@
     </parent>
     <artifactId>eap-jpa</artifactId>
     <packaging>war</packaging>
-    <name>Fuse on EAP :: Transaction :: Lab 6 :: Part 2</name>
+
+    <name>RedHat GPE Training :: Fuse_EAP :: Lab :: 5 :: Transactions :: Part 3</name>
 
     <!-- Any dependencies needed by your project -->
     <dependencies>

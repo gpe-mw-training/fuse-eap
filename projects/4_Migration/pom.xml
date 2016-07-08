@@ -7,7 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>
 
-    <name>RedHat GPE Training :: Fuse_EAP :: App :: 4 :: Migration</name>
+    <name>RedHat GPE Training :: Fuse_EAP :: Lab :: 4 :: Migration</name>
 
     <dependencies>
         <!-- Camel -->

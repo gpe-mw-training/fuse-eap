@@ -5,7 +5,7 @@
     <artifactId>rest-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>RedHat GPE Training :: Fuse_EAP :: App :: 3 :: Security</name>
+    <name>RedHat GPE Training :: Fuse_EAP :: Lab :: 3 :: Security</name>
 
     <properties>
       <camel.version>2.15.1.redhat-621084</camel.version>
