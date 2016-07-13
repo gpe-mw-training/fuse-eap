@@ -1,24 +1,14 @@
-package com.redhat.consulting.fusequickstars.eap.jpa.model;
+package com.redhat;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
-/**
- *  @author lberetta
- */
-
-@Entity
 public class User {
 
-    @Id
-    @GeneratedValue
     private Integer id;
     private String username;
 
     public User() {}
 
-    public User(String username) {
+    public User(Integer id, String username) {
+        this.id = id;
         this.username = username;
     }
 
@@ -36,10 +26,5 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
-    }
-
-    @Override
-    public String toString() {
-        return "User [id=" + id + ", username=" + username + "]";
     }
 }

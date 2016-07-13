@@ -1,6 +1,6 @@
-package com.redhat.gpe.training.camel;
+package com.redhat;
 
-import com.redhat.gpe.training.camel.bean.MyBean;
+import com.redhat.bean.MyBean;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.main.Main;
 import org.slf4j.Logger;

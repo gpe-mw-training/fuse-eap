@@ -2,13 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>com.redhat</groupId>
   <artifactId>eap-parent</artifactId>
   <version>6.2.1</version>
   <packaging>pom</packaging>
 
-  <name>Fuse on EAP :: Transaction :: Lab 6 :: Part 1</name>
+  <name>Fuse on EAP :: Transaction :: Lab 6 :: Part 2</name>
 
   <properties>
     <version.activemq>5.11.0.redhat-621084</version.activemq>
@@ -143,14 +142,14 @@
               </goals>
               <configuration>
                 <username>admin</username>
-                <password>Password1!</password>
-                <skip>true</skip>
+                <password>jbossap1!</password>
+                <skip>false</skip>
               </configuration>
             </execution>
           </executions>
           <configuration>
             <username>admin</username>
-            <password>password</password>
+            <password>jbossap1!</password>
             <skip>false</skip>
           </configuration>
         </plugin>

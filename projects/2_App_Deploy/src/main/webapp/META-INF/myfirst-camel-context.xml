@@ -8,9 +8,9 @@
        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd">
 
 	<jee:jndi-lookup id="MyCamelDS" jndi-name="java:jboss/datasources/MyCamelDS"/>
-	<bean id="currencyconvertor" class="com.redhat.demo01.CurrencyConvertor"/>
-	
-    
+	<bean id="currencyconvertor" class="com.redhat.ExchangeApp.CurrencyConvertor"/>
+
+
     <camelContext xmlns="http://camel.apache.org/schema/spring">
 	    <restConfiguration component="servlet" bindingMode="json" contextPath="/camel">
 	      <dataFormatProperty key="prettyPrint" value="true"/>
@@ -57,4 +57,3 @@
 </camelContext>
 
 </beans>
-
