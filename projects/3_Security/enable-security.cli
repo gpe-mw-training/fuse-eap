@@ -1,0 +1,11 @@
+batch
+
+### enable trace level logging of the org.jboss.security.* package
+/subsystem=logging/logger=org.jboss.security/:add(category=org.jboss.security,level=TRACE,use-parent-handlers=true)
+
+### remove hard coded log level of INFO on console logger
+/subsystem=logging/console-handler=CONSOLE:undefine-attribute(name=level)
+
+reload
+
+run-batch

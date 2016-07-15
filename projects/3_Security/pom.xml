@@ -34,12 +34,6 @@
         </dependency>
         <dependency>
           <groupId>org.apache.camel</groupId>
-          <artifactId>camel-jms</artifactId>
-          <version>${camel.version}</version>
-          <scope>provided</scope>
-        </dependency>
-        <dependency>
-          <groupId>org.apache.camel</groupId>
           <artifactId>camel-test</artifactId>
           <version>${camel.version}</version>
           <scope>provided</scope>
@@ -99,14 +93,6 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-core</artifactId>
