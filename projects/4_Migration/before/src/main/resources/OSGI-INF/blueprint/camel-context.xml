@@ -15,7 +15,7 @@
 
         <!-- Package Scanning that locates the route -->
         <packageScan>
-            <package>com.redhat.consulting.route</package>
+            <package>com.redhat.route</package>
         </packageScan>
     </camel:camelContext>
 
