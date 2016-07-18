@@ -27,6 +27,7 @@
         <groupId>javax.annotation</groupId>
         <artifactId>javax.annotation-api</artifactId>
         <version>${version.javax.enterprise}</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -86,11 +87,13 @@
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-log4j12</artifactId>
         <version>${version.slf4j}</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
         <version>${version.slf4j}</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.apache.activemq</groupId>
