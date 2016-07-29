@@ -6,6 +6,6 @@ batch
 ### remove hard coded log level of INFO on console logger
 /subsystem=logging/console-handler=CONSOLE:undefine-attribute(name=level)
 
-reload
+:reload
 
 run-batch
