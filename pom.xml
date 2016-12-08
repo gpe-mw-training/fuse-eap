@@ -11,7 +11,7 @@
     <modules>
         <module>/projects/2_App_Deploy</module>
         <module>/projects/3_Security</module>
-        <module>/projects/4_Migration</module>
+        <module>/projects/4_Migration/before/</module>
         <module>/projects/5_Transactions</module>
     </modules>
 </project>
