@@ -37,6 +37,7 @@
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-servlet</artifactId>
       <version>2.15.1.redhat-621084</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
   <build>
@@ -143,164 +144,70 @@
 
   <repositories>
     <repository>
-      <id>redhat-techpreview-all-repository</id>
-      <name>Red Hat Tech Preview repository (all)</name>
-      <url>http://maven.repository.redhat.com/techpreview/all/</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
+        <id>redhat-ea-repository</id>
+        <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
     </repository>
-    <repository>
-      <id>redhat-ea-repository</id>
-      <name>Red Hat Early Access repository (all)</name>
-      <url>https://maven.repository.redhat.com/earlyaccess/all/</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>fusesource.releases</id>
-      <name>FuseSource Release Repository</name>
-      <url>http://repo.fusesource.com/nexus/content/repositories/releases</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>fusesource.public</id>
-      <name>FuseSource Release Repository</name>
-      <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-        <id>rh-mvn-repo</id>
-        <name>Red Hat Maven Repo</name>
-        <url>https://maven.repository.redhat.com/ga/</url>
-    </repository>
-    <repository>
-        <id>fusesource-public-repository</id>
-        <name>FuseSource Release Repository</name>
-        <url>https://repository.jboss.org/nexus/content/repositories/fs-public/</url>
-    </repository>
-    <repository>
-        <id>jboss-public-repository</id>
-        <name>JBoss.org Public Maven Repository Group</name>
-        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-    </repository>
-    <repository>
-        <id>jboss-fuse-ea</id>
-        <name>JBoss Fuse EA</name>
-        <url>https://repository.jboss.org/nexus/content/groups/ea</url>
-    </repository>
-    <repository>
-        <id>jboss-releases</id>
-        <name>JBoss.org Fuse Releases</name>
-        <url>https://repository.jboss.org/nexus/content/repositories/fs-releases/</url>
-    </repository>
-    <repository>
-        <id>mvn-central</id>
-        <name>Maven Central</name>
-        <url>http://repo1.maven.org/maven2/</url>
-    </repository>
-    <repository>
-        <id>mvn-apache-repo</id>
-        <name>Maven Apache Repo</name>
-        <url>https://repo.maven.apache.org/maven2/org/apache/maven/plugins/</url>
-    </repository>
+      <repository>
+          <id>redhat-ga-repository</id>
+          <url>https://maven.repository.redhat.com/ga</url>
+          <releases>
+              <enabled>true</enabled>
+          </releases>
+          <snapshots>
+              <enabled>false</enabled>
+          </snapshots>
+      </repository>
+      <repository>
+          <id>jboss-fuse-ea</id>
+          <url>https://repository.jboss.org/nexus/content/groups/ea</url>
+          <releases>
+              <enabled>true</enabled>
+          </releases>
+          <snapshots>
+              <enabled>false</enabled>
+          </snapshots>
+      </repository>
   </repositories>
 
   <pluginRepositories>
     <pluginRepository>
-      <id>redhat-techpreview-all-repository</id>
-      <name>Red Hat Tech Preview repository (all)</name>
-      <url>http://maven.repository.redhat.com/techpreview/all/</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
+        <id>redhat-ea-repository</id>
+        <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
     </pluginRepository>
-    <pluginRepository>
-      <id>redhat-ea-repository</id>
-      <name>Red Hat Early Access repository (all)</name>
-      <url>https://maven.repository.redhat.com/earlyaccess/all/</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </pluginRepository>
-    <pluginRepository>
-      <id>fusesource.releases</id>
-      <name>FuseSource Release Repository</name>
-      <url>http://repo.fusesource.com/nexus/content/repositories/releases</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </pluginRepository>
-    <pluginRepository>
-      <id>fusesource.public</id>
-      <name>FuseSource Release Repository</name>
-      <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </pluginRepository>
-    <pluginRepository>
-      <id>eviwarePluginRepository</id>
-      <url>http://www.soapui.org/repository/maven2/</url>
-    </pluginRepository>
-    <pluginRepository>
-        <id>rh-mvn-repo</id>
-        <name>Red Hat Maven Repo</name>
-        <url>https://maven.repository.redhat.com/ga/</url>
-    </pluginRepository>
-    <pluginRepository>
-        <id>fusesource-public-repository</id>
-        <name>FuseSource Release Repository</name>
-        <url>https://repository.jboss.org/nexus/content/repositories/fs-public/</url>
-    </pluginRepository>
-    <pluginRepository>
-        <id>jboss-public-repository-group</id>
-        <name>JBoss.org Public Maven Repository Group</name>
-        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-    </pluginRepository>
-    <pluginRepository>
-        <id>jboss-releases</id>
-        <name>JBoss.org Fuse Releases</name>
-        <url>https://repository.jboss.org/nexus/content/repositories/fs-releases</url>
-    </pluginRepository>
-    <pluginRepository>
-        <id>mvn-apache-repo</id>
-        <name>Maven Apache Repo</name>
-        <url>https://repo.maven.apache.org/maven2/org/apache/maven/plugins/</url>
-    </pluginRepository>
+      <pluginRepository>
+          <id>redhat-ga-repository</id>
+          <url>https://maven.repository.redhat.com/ga</url>
+          <releases>
+              <enabled>true</enabled>
+          </releases>
+          <snapshots>
+              <enabled>false</enabled>
+          </snapshots>
+      </pluginRepository>
+      <pluginRepository>
+          <id>jboss-fuse-ea</id>
+          <url>https://repository.jboss.org/nexus/content/groups/ea</url>
+          <releases>
+              <enabled>true</enabled>
+          </releases>
+          <snapshots>
+              <enabled>false</enabled>
+          </snapshots>
+      </pluginRepository>
   </pluginRepositories>
-  <description>Parent POM for Fuse on EAP Quickstarts. Defines all Dependencies and Plugins.</description>
+
+  <description>POM for Lab 2 App Deploy - Fuse on EAP lab assets</description>
+
 </project>
